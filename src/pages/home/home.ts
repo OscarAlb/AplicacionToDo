@@ -21,6 +21,12 @@ export class HomePage {
     this.todos=this.todoService.getTodos();
     }
 
+
+  archiveTodo(todoIndex){
+    this.todoService.archiveTodo(todoIndex);
+  }
+
+
   goToArchivePage() {
     this.navCtrl.push(ArchivosPage)
   }
